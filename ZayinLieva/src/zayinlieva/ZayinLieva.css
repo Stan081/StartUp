@@ -1,0 +1,68 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 4, 2018, 11:28:54 PM
+    Author     : STANLEY
+*/
+.root{
+    -fx-background-image:url(../img/bckg1.jpg);
+    -fx-background-repeat:no-repeat;
+    -fx-background-color:#ffcc66;
+    
+}
+
+
+
+.Zayin_Buttons{
+    -fx-background-color:  #151515;
+    -fx-border-radius: 0px;
+    -fx-text-fill: whitesmoke;
+    -fx-font-family: Darksand;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-font-color: white;
+    
+}
+.Zayin_Buttons:hover{
+    -fx-border-color: white;
+    -fx-border-width: 0px 0px 0px 4px;
+    -fx-background-color:#926C0E;
+    -fx-text-fill: white;
+}
+
+.wizard {
+    -fx-tab-max-height: 0 
+    
+} 
+.wizard .tab-header-area {
+    visibility: hidden ;
+    background-color: white;
+}
+
+.login{
+    -fx-background-color:  #151515;
+    -fx-border-radius: 0px;
+    -fx-text-fill: white;
+    -fx-font-family: Darksand;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    
+}
+.login:hover{
+      -fx-border-color: white;
+    -fx-border-width: 0px 0px 0px 4px;
+    -fx-background-color:#926C0E;
+    -fx-text-fill: white;
+}
+
+
+.pane1{
+    -fx-background-color: #ffffff;
+}
+
+.pane2{
+    -fx-background-color: #cccccc;
+}

@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="1090.0" prefWidth="1920.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="easyed.StudRegFXMLController">
+   <children>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="991.0" prefWidth="1606.0" styleClass="root" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+               <children>
+                  <AnchorPane layoutX="10.0" layoutY="23.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="103.0" prefWidth="1415.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="188.0" fitWidth="242.0" layoutY="-62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/img7.png" />
+                           </image>
+                        </ImageView>
+                        <RadioButton fx:id="chkBNewG" layoutX="1053.0" layoutY="44.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="141.0" style="-fx-text-fill: #042954;" styleClass="Zayin_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="New Parent" textFill="#042954">
+                           <font>
+                              <Font name="Constantia" size="17.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="guardian" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="chkBRetG" layoutX="1218.0" layoutY="44.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="181.0" style="-fx-text-fill: #042954;" styleClass="Zayin_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="Returning Parent" textFill="#042954" toggleGroup="$guardian">
+                           <font>
+                              <Font name="Constantia" size="17.0" />
+                           </font>
+                        </RadioButton>
+                        <TextField layoutX="14.0" layoutY="45.0" prefHeight="40.0" prefWidth="344.0" styleClass="EasyEd_Textfields" stylesheets="@easyEdCSS.css" text="Enter Guardian Phone Number" />
+                        <Button fx:id="btnAddStudent1" contentDisplay="CENTER" layoutX="387.0" layoutY="53.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnAddStudentAction" prefHeight="33.0" prefWidth="63.0" styleClass="EasyEd_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="Go">
+                           <font>
+                              <Font name="Constantia" size="10.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="14.0" layoutY="157.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="884.0" prefWidth="1592.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="66.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="157.0">
+                     <children>
+                        <HBox layoutX="73.0" layoutY="342.0">
+                           <children>
+                              <ComboBox fx:id="cmbSession" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cmbSessionAction" prefHeight="40.0" prefWidth="400.0" promptText="Session" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                 <HBox.margin>
+                                    <Insets right="40.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                              <ComboBox fx:id="cmbTerm" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cmbTermAction" prefHeight="40.0" prefWidth="400.0" promptText="Term" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                 <HBox.margin>
+                                    <Insets right="40.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                              <ComboBox fx:id="cmbClass" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cmbClassAction" prefHeight="40.0" prefWidth="400.0" promptText="Class" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                 <HBox.margin>
+                                    <Insets right="40.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                           </children>
+                           <padding>
+                              <Insets top="30.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutX="33.0" layoutY="36.0">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <TextField fx:id="txtSFName" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="First Name" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <font>
+                                          <Font name="SansSerif Regular" size="12.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="txtSNation" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Nationality" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <DatePicker fx:id="dpDOB" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="44.0" prefWidth="400.0" promptText="Date Of Birth" style="-fx-font-size: 20; -fx-background-color: #e1e4eb; -fx-font-family: serif;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </DatePicker>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="40.0" right="40.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <TextField fx:id="txtSON" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Other Names" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <ComboBox fx:id="cmbSState" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cmbSStateAction" prefHeight="40.0" prefWidth="400.0" promptText="State Of Origin" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </ComboBox>
+                                    <TextField fx:id="txtPSchool" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Name OF Previous School" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="40.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <ComboBox fx:id="cmbSSex" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cmbSSexAction" prefHeight="40.0" prefWidth="400.0" promptText="Sex" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </ComboBox>
+                                    <ComboBox fx:id="cmbSLGA" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cmbSLGAAction" prefHeight="40.0" prefWidth="400.0" promptText="Lga" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </ComboBox>
+                                    <ComboBox fx:id="cmbPClass" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cmbPClassAction" prefHeight="40.0" prefWidth="400.0" promptText="Previous Class" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </ComboBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="40.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="73.0" layoutY="487.0">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <TextField fx:id="txtPFName" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="First Name" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="txtPNation" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Nationality" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="txtPPhone" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Phone Number" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <ComboBox fx:id="cmbPReligion" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cmbPReligionAction" prefHeight="40.0" prefWidth="400.0" promptText="Religion" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </ComboBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="40.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <TextField fx:id="txtPON" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Other Names" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <ComboBox fx:id="cmbPState" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cmbPStateAction" prefHeight="40.0" prefWidth="400.0" promptText="State Of Origin" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </ComboBox>
+                                    <TextField fx:id="txtPEmail" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Email Address" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextArea fx:id="txtPOAddress" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="66.0" prefWidth="400.0" promptText="Oficial Address" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="Serif Regular" size="12.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="40.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <ComboBox fx:id="cmbPSex" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cmbPSexAction" prefHeight="40.0" prefWidth="400.0" promptText="Sex" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </ComboBox>
+                                    <ComboBox fx:id="cmbPLGA" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cmbPLGAAction" prefHeight="40.0" prefWidth="400.0" promptText="Lga" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </ComboBox>
+                                    <TextField fx:id="txtPOccupation" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Occupation" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextArea fx:id="txtPRAddress" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" prefWidth="400.0" promptText="Residential Address" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="Serif Regular" size="12.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="40.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <TextArea fx:id="txtDisability" layoutX="71.0" layoutY="281.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="62.0" prefWidth="844.0" promptText="Disability (Explain)" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <Label alignment="CENTER" layoutX="533.0" layoutY="442.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="395.0" style="-fx-background-color: WHITE; -fx-text-fill: #042954;" text="Parent/Guardian Details" textAlignment="CENTER" textFill="#2c2929" underline="true">
+                           <font>
+                              <Font name="Serif Bold" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="411.0" layoutY="7.0" prefHeight="40.0" prefWidth="644.0" style="-fx-background-color: WHITE; -fx-text-fill: #042954;" text="Student Details" textAlignment="CENTER" textFill="#2c2929" underline="true">
+                           <font>
+                              <Font name="Serif Bold" size="29.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutX="475.0" layoutY="828.0">
+                           <children>
+                              <Button fx:id="btnAddStudent" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnAddStudentAction" prefHeight="40.0" prefWidth="180.0" styleClass="EasyEd_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="Add Student">
+                                 <HBox.margin>
+                                    <Insets left="50.0" right="50.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="clearFields" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clearFieldsAction" prefHeight="40.0" prefWidth="166.0" styleClass="EasyEd_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="Clear Fields">
+                                 <HBox.margin>
+                                    <Insets left="50.0" right="50.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <DatePicker fx:id="dpDOA" editable="false" layoutX="953.0" layoutY="281.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="44.0" prefWidth="400.0" promptText="Date Of Admission" style="-fx-font-size: 20; -fx-background-color: #e1e4eb; -fx-font-family: serif;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="92.0" prefWidth="1920.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <MenuButton layoutX="1572.0" layoutY="11.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="54.0" prefWidth="230.0" style="-fx-background-color: WHITE;" text="STANLEY" textFill="#042954" AnchorPane.rightAnchor="120.0">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                     </items>
+                     <font>
+                        <Font name="Constantia" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/icons8_businessman_48px_1.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </MenuButton>
+                  <AnchorPane layoutX="-1.0" layoutY="-4.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="92.0" prefWidth="314.0" style="-fx-background-color: #FFA701;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <HBox layoutX="316.0" prefHeight="100.0" prefWidth="215.0">
+                     <children>
+                        <ImageView fitHeight="92.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/1.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="92.0" fitWidth="112.0" layoutX="410.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/2.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="92.0" fitWidth="111.0" layoutX="610.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/3.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="92.0" fitWidth="111.0" layoutX="810.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/4.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="92.0" fitWidth="115.0" layoutX="369.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/5.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="91.0" fitWidth="110.0" layoutX="251.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/3.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="91.0" fitWidth="111.0" layoutX="369.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/4.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="91.0" fitWidth="122.0" layoutX="127.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/1.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="91.0" fitWidth="113.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/5.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="91.0" fitWidth="111.0" layoutX="485.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/2.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1107.0" prefWidth="314.0" style="-fx-background-color: #042954;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnStudDet" alignment="BASELINE_LEFT" layoutY="265.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnStudDetAction" prefHeight="90.0" prefWidth="415.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Student Details" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnStaffDashbosrd" alignment="BASELINE_LEFT" layoutY="88.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnStaffDashboardAction" prefHeight="90.0" prefWidth="415.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Staffs" textAlignment="CENTER" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnPaySec" alignment="BASELINE_LEFT" layoutX="-2.0" layoutY="441.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnPaySecAction" prefHeight="90.0" prefWidth="415.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Payment Section" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnClassDashBoard" alignment="BASELINE_LEFT" layoutY="353.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnClassDashboardAction" prefHeight="90.0" prefWidth="415.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Class Section" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnInv" alignment="BASELINE_LEFT" layoutY="529.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="90.0" prefWidth="415.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Inventory" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnStudReg" alignment="BASELINE_LEFT" layoutY="176.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnStudRegAction" prefHeight="90.0" prefWidth="415.0" style="-fx-border-width: 0.3px 0.3px 0.3px 10px; -fx-border-color: #FFA701; -fx-text-fill: white; -fx-font-size: 20px;" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="            Student Registration" textAlignment="CENTER" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnDashbosrd" alignment="BASELINE_LEFT" layoutX="-2.0" layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDashboardAction" prefHeight="90.0" prefWidth="415.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Dashboard" textAlignment="CENTER" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="8.0" layoutY="19.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_uncheck_all_filled_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="8.0" layoutY="285.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_conference_filled_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="8.0" layoutY="196.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_guest_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="8.0" layoutY="373.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_training_128px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="8.0" layoutY="468.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_paypal_52px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="8.0" layoutY="549.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_business_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="8.0" layoutY="108.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_conference_call_64px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

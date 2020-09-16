@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="easyed.ClassFXMLController">
+   <children>
+      <BorderPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="92.0" prefWidth="1920.0" style="-fx-background-color: white;">
+               <children>
+                  <MenuButton layoutX="1635.0" layoutY="19.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="54.0" prefWidth="230.0" style="-fx-background-color: white;" text="STANLEY" textFill="#042954" AnchorPane.rightAnchor="120.0">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                     </items>
+                     <font>
+                        <Font name="Constantia" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../AppData/Local/Temp/icons8_administrator_male_96px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuButton>
+                  <ImageView fitHeight="107.0" fitWidth="127.0" layoutX="19.0" layoutY="5.0">
+                     <image>
+                        <Image url="@../../../../../AppData/Local/Temp/icons8_books_50px.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutY="-4.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="92.0" prefWidth="314.0" style="-fx-background-color: #FFA701;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <HBox layoutX="314.0" prefHeight="100.0" prefWidth="215.0">
+                     <children>
+                        <ImageView fitHeight="96.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/1.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="102.0" fitWidth="125.0" layoutX="410.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/2.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="97.0" fitWidth="187.0" layoutX="610.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/3.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="96.0" fitWidth="173.0" layoutX="810.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/4.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="96.0" fitWidth="173.0" layoutX="369.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/5.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="97.0" fitWidth="187.0" layoutX="251.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/3.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="96.0" fitWidth="173.0" layoutX="369.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/4.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="102.0" fitWidth="125.0" layoutX="127.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/1.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="96.0" fitWidth="131.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/5.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="96.0" fitWidth="173.0" layoutX="485.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/2.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1107.0" prefWidth="314.0" style="-fx-background-color: #042954;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnStaffDashboard" alignment="BASELINE_LEFT" layoutY="88.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnStaffDashboardAction" prefHeight="89.0" prefWidth="399.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Staff" textAlignment="CENTER" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnStudReg" alignment="BASELINE_LEFT" layoutY="175.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnStudRegAction" prefHeight="89.0" prefWidth="399.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Student Registration" textAlignment="CENTER" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnStudDet" alignment="BASELINE_LEFT" layoutY="262.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnStudDetAction" prefHeight="89.0" prefWidth="399.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="              Student Details" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnPaymentDashboard" alignment="BASELINE_LEFT" layoutY="438.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnPaymentDashboardAction" prefHeight="89.0" prefWidth="399.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="              Payment Section" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnclassDashboard" alignment="BASELINE_LEFT" layoutY="350.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnClassDashboardAction" prefHeight="89.0" prefWidth="399.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="              Class Section" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnInventoryDashboard" alignment="BASELINE_LEFT" layoutY="526.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnInventoryDashboardAction" prefHeight="89.0" prefWidth="399.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="              Inventory" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnDashboard" alignment="BASELINE_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDashboardAction" prefHeight="89.0" prefWidth="399.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Dashboard" textAlignment="CENTER" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="20.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_uncheck_all_filled_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="7.0" layoutY="282.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_conference_filled_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="7.0" layoutY="195.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_add_user_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="7.0" layoutY="370.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_training_128px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="7.0" layoutY="458.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_paypal_52px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="12.0" layoutY="108.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_conference_call_64px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="7.0" layoutY="546.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_business_100px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="988.0" prefWidth="1110.0" style="-fx-background-color: #e1e4eb;" styleClass="root" stylesheets="@../EasyEdCSS/easyEdCSS.css" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="2.0" layoutY="6.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="1601.0" style="-fx-background-color: white;">
+                     <children>
+                        <HBox layoutX="96.0" layoutY="15.0">
+                           <children>
+                              <ComboBox fx:id="cmbSession" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#cmbSessionAction" prefHeight="40.0" prefWidth="250.0" promptText="Session" style="-fx-font-size: 20px;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                 <HBox.margin>
+                                    <Insets right="30.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                              <ComboBox fx:id="cmbTerm" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#cmbTermAction" prefHeight="40.0" prefWidth="250.0" promptText="Term" style="-fx-font-size: 20px;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                 <HBox.margin>
+                                    <Insets right="30.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                              <ComboBox fx:id="cmbClass" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#cmbClassAction" prefHeight="40.0" prefWidth="250.0" promptText="Class" style="-fx-font-size: 20px;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                 <HBox.margin>
+                                    <Insets right="30.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                              <Button fx:id="btnSortFields" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnSortFieldsAction" prefHeight="32.0" prefWidth="59.0" style="-fx-background-color: #042954; -fx-text-fill: white;" styleClass="EasyEd_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="Sort">
+                                 <HBox.margin>
+                                    <Insets right="30.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children></AnchorPane>
+                  <AnchorPane layoutX="6.0" layoutY="92.0" prefHeight="1004.0" prefWidth="1077.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="11.0" AnchorPane.topAnchor="92.0">
+                     <children>
+                        <TableView fx:id="tblStudClass" onMouseClicked="#tbiStudentsSelectAction" prefHeight="823.0" prefWidth="1076.0" stylesheets="@../EasyEdCSS/tableCSS.css">
+                          <columns>
+                            <TableColumn fx:id="colId" prefWidth="54.93334883451462" text="Id" />
+                            <TableColumn fx:id="colFName" prefWidth="278.0001525878906" text="First Name" />
+                              <TableColumn fx:id="colONames" prefWidth="316.666748046875" text="Other Names" />
+                              <TableColumn fx:id="colGender" prefWidth="109.33319091796875" text="Gender" />
+                              <TableColumn fx:id="colPhone" editable="false" prefWidth="179.3333740234375" text="Class" />
+                              <TableColumn fx:id="colFees" editable="false" prefWidth="134.66656494140625" text="Fee Status" />
+                          </columns>
+                           <styleClass>
+                              <String fx:value="table-column" />
+                              <String fx:value="filler" />
+                              <String fx:value="column-header-background" />
+                              <String fx:value="column-header" />
+                           </styleClass>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                  <VBox layoutX="1097.0" layoutY="91.0" prefHeight="1017.0" prefWidth="497.0">
+                     <children>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="347.0" prefWidth="483.0" style="-fx-background-color: white;">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <TableView fx:id="tblStudFee" layoutX="9.0" layoutY="10.0" prefHeight="286.0" prefWidth="479.0" stylesheets="@../EasyEdCSS/tableCSS.css" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="10.0">
+                                <columns>
+                                  <TableColumn fx:id="colFeeDesc" prefWidth="259.3333740234375" text="FEE DESCRIPTION" />
+                                  <TableColumn fx:id="colFeePrice" prefWidth="103.33349609375" text="PRICE" />
+                                    <TableColumn fx:id="colFeeDate" prefWidth="109.9998779296875" text="DATE" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="259.0" prefWidth="497.0" style="-fx-background-color: white;">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <TableView fx:id="tblStudUniform" layoutX="9.0" layoutY="6.0" prefHeight="239.0" prefWidth="479.0" stylesheets="@../EasyEdCSS/tableCSS.css">
+                                 <columns>
+                                    <TableColumn fx:id="colUniformDesc" prefWidth="227.3333740234375" text="UNIFORM TYPE" />
+                                    <TableColumn fx:id="colUniformPrice" prefWidth="139.3333740234375" text="PRICE" />
+                                    <TableColumn fx:id="colUnifromDate" prefWidth="123.9998779296875" text="DATE" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="407.0" prefWidth="497.0" style="-fx-background-color: white;">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <TableView fx:id="tblStudBooks" layoutX="2.0" layoutY="7.0" prefHeight="357.0" prefWidth="489.0" stylesheets="@../EasyEdCSS/tableCSS.css" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="6.0">
+                                 <columns>
+                                    <TableColumn fx:id="colBookDesc" prefWidth="256.666748046875" text="BOOK DESCRIPTION" />
+                                    <TableColumn fx:id="colBookPrice" prefWidth="133.333251953125" text="PRICE" />
+                                    <TableColumn fx:id="colBookDate" prefWidth="102.0" text="DATE" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

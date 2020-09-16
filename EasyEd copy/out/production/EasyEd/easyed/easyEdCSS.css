@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18-Aug-2019, 01:33:43
+    Author     : Stan
+*/
+
+.root{
+    -fx-background-image:url(../img/bckg1.jpg);
+    -fx-background-repeat:no-repeat;
+    -fx-background-color:#ffcc66;
+}
+
+
+
+.Zayin_Buttons{
+    -fx-background-color: white;
+    -fx-border-radius: 0px;
+    -fx-text-fill:  #2F5597;
+    -fx-font-family: Darksand;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+
+    
+}
+.Zayin_Buttons:hover{
+    -fx-border-color: #c00000;
+    -fx-border-width: 0px 0px 0px 10px;
+    -fx-background-color: #2F5597;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+
+.Active_Buttons{
+    -fx-border-color: #c00000;
+    -fx-border-width: 0px 0px 0px 10px;
+    -fx-background-color: #2F5597;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+

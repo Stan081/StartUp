@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="adminDashBoard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="766.0" prefWidth="936.0" style="-fx-border-color: grey; -fx-background-color: #666666;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zayinlieva.ZayinAddItemController">
+   <top>
+      <HBox prefHeight="45.0" prefWidth="748.0" style="-fx-background-color: #926C0E;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="69.0" prefWidth="356.0" style="-fx-background-color: #121212;">
+               <children>
+                  <ImageView fitHeight="69.0" fitWidth="188.0" pickOnBounds="true" preserveRatio="true" x="100.0">
+                     <image>
+                        <Image url="@../img/IMG_0664.PNG" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="69.0" prefWidth="324.0" style="-fx-background-color: #926C0E;" />
+            <HBox prefHeight="69.0" prefWidth="256.0" style="-fx-background-color: #926C0E;">
+               <children>
+                  <TextField layoutX="50.0" prefHeight="25.0" prefWidth="256.0" promptText="search">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets top="25.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="451.0" prefWidth="159.0" style="-fx-background-color: #151515;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="8.0" prefWidth="159.0">
+               <children>
+                  <Button fx:id="btnCreateUser" mnemonicParsing="false" onAction="#btnCreateUserAction" prefHeight="27.0" prefWidth="159.0" styleClass="Zayin_Buttons" stylesheets="@ZayinLieva.css" text="User Section">
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="23.0" prefWidth="159.0">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="btnStore" mnemonicParsing="false" onAction="#btnStoreAction" prefHeight="27.0" prefWidth="159.0" styleClass="Zayin_Buttons" stylesheets="@ZayinLieva.css" text="Store">
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="180.0" prefHeight="23.0" prefWidth="159.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="170.0" style="-fx-background-color: #926C0E; -fx-border-color: white; -fx-border-width: 0px 0px 0px 4px; -fx-text-fill: white;" styleClass="Zayin_Buttons" stylesheets="@ZayinLieva.css" text="Add Item">
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="10.0" prefWidth="159.0">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#btnLogoutAction" prefHeight="27.0" prefWidth="158.0" styleClass="Zayin_Buttons" stylesheets="@ZayinLieva.css" text="Log-Out">
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <bottom>
+      <HBox prefHeight="82.0" prefWidth="746.0" style="-fx-background-color: #151515;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tblItems" layoutX="243.0" prefHeight="614.0" prefWidth="532.0">
+              <columns>
+                  <TableColumn fx:id="colId" minWidth="0.0" prefWidth="32.44451904296875" text="S/N" />
+                <TableColumn fx:id="colCategory" prefWidth="114.22213745117188" text="Category" />
+                <TableColumn fx:id="colName" minWidth="0.0" prefWidth="173.33331298828125" text="Product Name" />
+                  <TableColumn fx:id="colSize" minWidth="0.0" prefWidth="74.66668701171875" text="Size" />
+                  <TableColumn fx:id="colColor" minWidth="0.0" prefWidth="74.22216796875" text="Color" />
+                  <TableColumn fx:id="colPrice" minWidth="0.0" prefWidth="75.111083984375" text="Price" />
+              </columns>
+            </TableView>
+            <Label layoutX="98.0" layoutY="103.0" text="ADD ITEM" />
+            <ComboBox fx:id="cmbCat1" layoutX="28.0" layoutY="142.0" onAction="#cmb1CatAction" prefHeight="25.0" prefWidth="196.0" promptText="Select Category" styleClass="pane2" stylesheets="@ZayinLieva.css" />
+            <TextField fx:id="txtName" layoutX="14.0" layoutY="185.0" prefHeight="25.0" prefWidth="223.0" promptText="Enter Product Name">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Serif Italic" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtColor" layoutX="79.0" layoutY="281.0" prefHeight="25.0" prefWidth="151.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <Button fx:id="btnAddItem" layoutX="22.0" layoutY="386.0" mnemonicParsing="false" onAction="#btnAddItemAction" prefHeight="25.0" prefWidth="96.0" styleClass="Zayin_Buttons" stylesheets="@ZayinLieva.css" text="Add Item" />
+            <Button fx:id="btnUpdate" layoutX="152.0" layoutY="386.0" mnemonicParsing="false" onAction="#btnUpdateAction" prefHeight="25.0" prefWidth="86.0" styleClass="Zayin_Buttons" stylesheets="@ZayinLieva.css" text="Update Item" />
+            <Button fx:id="btnDelete" layoutX="69.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnDeleteAction" prefHeight="25.0" prefWidth="97.0" styleClass="Zayin_Buttons" stylesheets="@ZayinLieva.css" text="Delete Item" />
+            <TextField fx:id="txtPrice" layoutX="78.0" layoutY="326.0" prefHeight="25.0" prefWidth="153.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <Label layoutX="9.0" layoutY="327.0" prefHeight="24.0" prefWidth="60.0" style="-fx-background-color: black; -fx-font-style: italic; -fx-font-weight: bold; -fx-text-alignment: center;" text="  Price" textAlignment="JUSTIFY" textFill="#fefdfd" />
+            <Label layoutX="9.0" layoutY="282.0" prefHeight="24.0" prefWidth="60.0" style="-fx-background-color: black; -fx-font-style: italic; -fx-font-weight: bold; -fx-text-alignment: center;" text="  Color" textAlignment="JUSTIFY" textFill="#fefdfd" />
+            <Label layoutX="9.0" layoutY="238.0" prefHeight="24.0" prefWidth="60.0" style="-fx-background-color: black; -fx-font-style: italic; -fx-font-weight: bold; -fx-text-alignment: center;" text="    Size" textAlignment="JUSTIFY" textFill="#fefdfd" />
+            <TextField fx:id="txtSize" layoutX="79.0" layoutY="237.0" prefHeight="25.0" prefWidth="151.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="txtId" layoutX="49.0" layoutY="447.0" prefHeight="25.0" prefWidth="153.0" promptText="Enter Product S/N">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18-Aug-2019, 01:33:43
+    Author     : Stan
+*/
+
+.root{
+    -fx-background-repeat:no-repeat;
+    -fx-background-color: #e1e4eb;
+}
+
+
+
+.EasyEd_Buttons{
+    -fx-background-color: #FFA701;
+    -fx-border-radius: 0px;
+    -fx-text-fill:  whitesmoke;
+    -fx-font-family: Arial black;
+    -fx-font-style: italic;
+    -fx-font-size: 20px;
+
+    
+}
+.Menu_Pane_Buttons:hover{
+    -fx-border-color: #FFA701;
+    -fx-border-width: 0px 0px 0px 10px;
+    -fx-text-fill: #9E9C93;
+    -fx-font-size: 20px;
+}
+
+.EasyEd_Textfields{
+    -fx-font-family: Javanese Text ;
+    -fx-text-fill: black;
+    -fx-background-color:#e1e4eb;
+    -fx-font-size: 20px;
+}
+
+.Menu_Pane_Buttons{
+    -fx-font-family: Roboto;
+    -fx-text-fill: #9E9C93;
+    -fx-background-color: #042954;
+/*    -fx-border-width: 2px 0px 2px 0px ;*/
+/*    -fx-border-color: black;*/
+    -fx-font-size: 18px
+    
+}
+
+.EasyEd_ComboBox{
+    -fx-border-width: 0.2px;
+    -fx-font-family: Roboto;
+    -fx-background-color:  #e1e4eb;
+    -fx-border-color: #042954;
+    -fx-border-radius: 8px;
+}
+
+.EasyEd_ComboBox:hover{
+    -fx-border-width: 2.5px;
+    -fx-font-family: Roboto;
+    -fx-background-color: #FFA701;
+    -fx-border-color: #042954;
+}
+
+

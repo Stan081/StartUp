@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="1090.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="easyed.StaffsFXMLController">
+   <children>
+      <BorderPane fx:id="StudentReg" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1090.0" prefWidth="1920.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="991.0" prefWidth="1597.0" style="-fx-background-color: #F0F1F3;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutY="24.0" prefHeight="94.0" prefWidth="1242.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="188.0" fitWidth="242.0" layoutY="-62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/img7.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="361.0" layoutY="163.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="944.3333333333" prefWidth="1962.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="163.0">
+                     <children>
+                        <ComboBox fx:id="cmbClass" layoutX="33.0" layoutY="417.0" onAction="#cmbClassAction" prefHeight="50.0" prefWidth="368.0" promptText="QUALIFICATION" style="-fx-font-weight: bold; -fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <ComboBox fx:id="cmbPSex" layoutX="1288.0" layoutY="106.0" prefHeight="50.0" prefWidth="136.0" promptText="SEX" style="-fx-font-weight: bold; -fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <TextField fx:id="txtSON" layoutX="494.0" layoutY="106.0" prefHeight="50.0" prefWidth="285.0" promptText="OTHER NAMES" style="-fx-font-weight: bold; -fx-font-size: 20; -fx-background-color: #F0F1F3;" />
+                        <TextField fx:id="txtSFName" layoutX="33.0" layoutY="106.0" prefHeight="50.0" prefWidth="327.0" promptText="FIRST NAME" style="-fx-font-weight: bold; -fx-font-size: 20; -fx-background-color: #F0F1F3; -fx-font-family: san-serif;">
+                           <font>
+                              <Font name="SansSerif Regular" size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label alignment="CENTER" layoutX="837.0" layoutY="106.0" prefHeight="50.0" prefWidth="165.0" style="-fx-font-weight: bold; -fx-font-size: 20;" text="DATE OF BIRTH:" textFill="#042954">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtSNation" layoutX="33.0" layoutY="210.0" prefHeight="50.0" prefWidth="319.0" promptText="NATIONALITY" style="-fx-font-weight: bold; -fx-font-size: 20; -fx-background-color: #F0F1F3;" />
+                        <TextField fx:id="txtSState" layoutX="412.0" layoutY="211.0" prefHeight="50.0" prefWidth="282.0" promptText="STATE OF ORIGIN" style="-fx-font-weight: bold; -fx-font-size: 20; -fx-background-color: #F0F1F3;" />
+                        <TextField fx:id="txtSLGA" layoutX="955.0" layoutY="208.0" prefHeight="50.0" prefWidth="182.0" promptText="L.G.A/VILLAGE" style="-fx-font-weight: bold; -fx-font-size: 20; -fx-background-color: #F0F1F3;" />
+                        <DatePicker fx:id="dpDOA" layoutX="33.0" layoutY="314.0" prefHeight="50.0" prefWidth="361.0" promptText="DATE OF EMPLOYMENT" style="-fx-font-weight: bold; -fx-font-size: 20;" />
+                        <ComboBox fx:id="cmbPReligion" layoutX="1169.0" layoutY="195.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="249.0" promptText="RELIGION" style="-fx-font-weight: bold; -fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <TextArea fx:id="txtDisability" layoutX="33.0" layoutY="645.0" prefHeight="98.0" prefWidth="617.0" promptText="DISABILITY (EXPLAIN)" style="-fx-font-weight: bold; -fx-font-size: 20; -fx-background-color: #F0F1F3;" />
+                        <TextField fx:id="txtPPhone" layoutX="495.0" layoutY="316.0" prefHeight="50.0" prefWidth="390.0" promptText="PHONE NUMBER" style="-fx-font-weight: bold; -fx-font-size: 20; -fx-background-color: #F0F1F3;" />
+                        <TextField fx:id="txtPEmail" layoutX="957.0" layoutY="316.0" prefHeight="50.0" prefWidth="386.0" promptText="EMAIL ADDRESS" style="-fx-font-weight: bold; -fx-font-size: 20; -fx-background-color: #F0F1F3;" />
+                        <TextArea fx:id="txtPOAddress" layoutX="33.0" layoutY="518.0" prefHeight="74.0" prefWidth="580.0" promptText="OFFICIAL ADDRESS" style="-fx-font-weight: bold; -fx-font-size: 20; -fx-background-color: #F0F1F3;" />
+                        <Label alignment="CENTER" layoutX="555.0" layoutY="9.0" prefHeight="40.0" prefWidth="644.0" style="-fx-background-color: WHITE;" text="Staff Details" textAlignment="CENTER" textFill="#2c2929" underline="true">
+                           <font>
+                              <Font name="Serif Bold" size="38.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="txtPRAddress" layoutX="706.0" layoutY="520.0" prefHeight="74.0" prefWidth="580.0" promptText="RESIDENTIAL ADDRESS" style="-fx-font-weight: bold; -fx-font-size: 20; -fx-background-color: #F0F1F3;" />
+                        <Button fx:id="btnAddStudent" layoutX="591.0" layoutY="754.0" mnemonicParsing="false" onAction="#btnAddStudentAction" prefHeight="54.0" prefWidth="180.0" styleClass="EasyEd_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="ADD STAFF" />
+                        <Button fx:id="studentEdit" layoutX="910.0" layoutY="757.0" mnemonicParsing="false" onAction="#studentEditAction" prefHeight="46.0" prefWidth="166.0" styleClass="EasyEd_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="EDIT  INFO" />
+                        <ComboBox fx:id="cmbClass1" layoutX="482.0" layoutY="417.0" onAction="#cmbClassAction" prefHeight="50.0" prefWidth="293.0" promptText="CLASS" style="-fx-font-weight: bold; -fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <DatePicker fx:id="dpDOB" layoutX="1000.0" layoutY="106.0" prefHeight="50.0" prefWidth="232.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="92.0" prefWidth="1920.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <MenuButton layoutX="1476.0" layoutY="22.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="54.0" prefWidth="230.0" style="-fx-background-color: white;" text="STANLEY" textFill="#042954" AnchorPane.rightAnchor="120.0">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                     </items>
+                     <font>
+                        <Font name="Constantia" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/icons8_businessman_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuButton>
+                  <AnchorPane layoutX="-1.0" layoutY="-4.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="92.0" prefWidth="314.0" style="-fx-background-color: #FFA701;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1107.3333" prefWidth="314.0" style="-fx-background-color: #042954;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnDashboardStudDet" alignment="BASELINE_LEFT" layoutY="265.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDashboardStudDetAction" prefHeight="90.0" prefWidth="314.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Student Details" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnDashboardStaff" alignment="BASELINE_LEFT" layoutY="88.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDashboardStaffAction" prefHeight="90.0" prefWidth="314.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Staffs" textAlignment="CENTER" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnDashboardPaySec" alignment="BASELINE_LEFT" layoutX="-2.0" layoutY="441.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDashboardPaySecAction" prefHeight="90.0" prefWidth="314.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Payment Section" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnDashboardClass" alignment="BASELINE_LEFT" layoutY="353.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDashboardClassAction" prefHeight="90.0" prefWidth="314.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Class Section" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnDashboardInv" alignment="BASELINE_LEFT" layoutY="529.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDashboardInvAction" prefHeight="90.0" prefWidth="314.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Inventory" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnDashboardStudReg" alignment="BASELINE_LEFT" layoutY="176.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDashboardStudRegAction" prefHeight="90.0" prefWidth="314.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="            Student Registration" textAlignment="CENTER" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnDashbosrd" alignment="BASELINE_LEFT" layoutX="-2.0" layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDashboardAction" prefHeight="90.0" prefWidth="314.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Dashboard" textAlignment="CENTER" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="13.0" layoutY="19.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_uncheck_all_filled_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="12.0" layoutY="107.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_conference_call_64px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="13.0" layoutY="196.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_guest_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="283.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_conference_filled_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="13.0" layoutY="373.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_training_128px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="13.0" layoutY="461.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_paypal_52px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="13.0" layoutY="549.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_business_100px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1107.0" prefWidth="0.0" style="-fx-background-color: #F0F1F3;" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <AnchorPane prefHeight="0.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

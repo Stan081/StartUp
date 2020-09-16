@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1090.0" prefWidth="1500.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="easyed.UpdateStudentController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="1090.0" prefWidth="1500.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="998.0" prefWidth="1500.0" styleClass="root" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+               <children>
+                  <AnchorPane layoutX="10.0" layoutY="23.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="103.0" prefWidth="1415.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="188.0" fitWidth="242.0" layoutY="-62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/img7.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="14.0" layoutY="134.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="864.0" prefWidth="1500.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="108.0" AnchorPane.topAnchor="134.0">
+                     <children>
+                        <ComboBox fx:id="cmbSSex" layoutX="948.0" layoutY="62.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cmbSSexAction" prefHeight="40.0" prefWidth="400.0" promptText="Sex" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <ComboBox fx:id="cmbPSex" layoutX="949.0" layoutY="479.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cmbPSexAction" prefHeight="40.0" prefWidth="400.0" promptText="Sex" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <TextField fx:id="txtPON" layoutX="505.0" layoutY="480.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Other Names" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <TextField fx:id="txtPFName" layoutX="66.0" layoutY="480.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="First Name" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <TextField fx:id="txtPNation" layoutX="66.0" layoutY="544.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Nationality" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <TextField fx:id="txtSON" layoutX="504.0" layoutY="63.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Other Names" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <TextField fx:id="txtSFName" layoutX="63.0" layoutY="63.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="First Name" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                           <font>
+                              <Font name="SansSerif Regular" size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtSNation" layoutX="62.0" layoutY="126.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Nationality" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <DatePicker fx:id="dpDOB" layoutX="64.0" layoutY="190.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="44.0" prefWidth="400.0" promptText="Date Of Birth" style="-fx-font-size: 20; -fx-background-color: #e1e4eb;" />
+                        <TextField fx:id="txtPSchool" layoutX="504.0" layoutY="190.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Name OF Previous School" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <ComboBox fx:id="cmbPReligion" layoutX="66.0" layoutY="690.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#cmbPReligionAction" prefHeight="40.0" prefWidth="400.0" promptText="Religion" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <TextArea fx:id="txtDisability" layoutX="62.0" layoutY="255.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="62.0" prefWidth="844.0" promptText="Disability (Explain)" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <ComboBox fx:id="cmbPClass" layoutX="950.0" layoutY="189.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cmbPClassAction" prefHeight="40.0" prefWidth="400.0" promptText="Previous Class" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <TextField fx:id="txtPOccupation" layoutX="950.0" layoutY="618.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Occupation" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <TextField fx:id="txtPPhone" layoutX="66.0" layoutY="618.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Phone Number" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <TextField fx:id="txtPEmail" layoutX="506.0" layoutY="618.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Email Address" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <TextArea fx:id="txtPOAddress" layoutX="504.0" layoutY="688.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="66.0" prefWidth="400.0" promptText="Oficial Address" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextArea>
+                        <Label alignment="CENTER" layoutX="460.0" layoutY="409.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="513.0" style="-fx-background-color: WHITE;" text="Parent/Guardian Details" textAlignment="CENTER" textFill="#042954" underline="true">
+                           <font>
+                              <Font name="Serif Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="440.0" layoutY="7.0" prefHeight="40.0" prefWidth="516.0" style="-fx-background-color: WHITE;" text="Student Details" textAlignment="CENTER" textFill="#042954" underline="true">
+                           <font>
+                              <Font name="Serif Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="txtPRAddress" layoutX="950.0" layoutY="691.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" prefWidth="400.0" promptText="Residential Address" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <Button fx:id="btnAddStudent" layoutX="504.0" layoutY="820.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnAddStudentAction" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #042954;" styleClass="EasyEd_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="Add Student" AnchorPane.bottomAnchor="90.33333333333326" AnchorPane.topAnchor="820.0" />
+                        <Button fx:id="clearFields" layoutX="824.0" layoutY="820.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clearFieldsAction" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #042954;" styleClass="EasyEd_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="Clear Fields" AnchorPane.bottomAnchor="90.33333333333326" AnchorPane.topAnchor="820.0" />
+                        <DatePicker fx:id="dpDOA" layoutX="950.0" layoutY="255.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="44.0" prefWidth="400.0" promptText="Date Of Admission" style="-fx-font-size: 20; -fx-background-color: #e1e4eb;" />
+                        <ComboBox fx:id="cmbSState" layoutX="504.0" layoutY="126.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cmSStateAction" prefHeight="40.0" prefWidth="400.0" promptText="State Of Origin" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <ComboBox fx:id="cmbPState" layoutX="504.0" layoutY="546.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cmPStateAction" prefHeight="40.0" prefWidth="400.0" promptText="State Of Origin" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <ComboBox fx:id="cmbSLGA" layoutX="950.0" layoutY="126.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cmSLGAAction" prefHeight="40.0" prefWidth="400.0" promptText="Lga" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <ComboBox fx:id="cmbPLGA" layoutX="950.0" layoutY="546.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#cmPLGAAction" prefHeight="40.0" prefWidth="400.0" promptText="Lga" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                        <Button fx:id="btnUpdate" layoutX="1165.0" layoutY="784.0" mnemonicParsing="false" onAction="#btnUpdateAction" prefHeight="41.0" prefWidth="153.0" styleClass="EasyEd_Buttons" stylesheets="@easyEdCSS.css" text="Update." />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="92.0" prefWidth="1500.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="-1.0" layoutY="-4.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="92.0" prefWidth="314.0" style="-fx-background-color: #FFA701;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

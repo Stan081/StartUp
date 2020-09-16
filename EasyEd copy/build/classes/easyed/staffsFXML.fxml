@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="1090.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="easyed.StaffsFXMLController">
+   <children>
+      <BorderPane fx:id="StudentReg" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1090.0" prefWidth="1920.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <TabPane fx:id="tpStaffs" BorderPane.alignment="CENTER">
+               <tabs>
+                  <Tab id="tabPane" fx:id="tpSDets" closable="false" onSelectionChanged="#tpSDetsAction" style="-fx-background-color: #FFA701; -fx-pref-width: 200px; -fx-pref-height: 35px; -fx-font-size: 20; -fx-font-family: serif; -fx-border-color: #042954; -fx-border-radius: 5px; -fx-text-fill: white;" text="Staff Details">
+                     <content>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="991.0" prefWidth="1597.0" style="-fx-background-color: #e1e4eb;">
+                           <children>
+                              <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="988.0" prefWidth="1567.0" style="-fx-background-color: #e1e4eb;" styleClass="root" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                 <children>
+                                    <AnchorPane layoutX="940.0" layoutY="18.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="970.0" prefWidth="667.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="18.0">
+                                       <children>
+                                          <ImageView fitHeight="254.0" fitWidth="238.0" layoutX="4.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/teacher.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="lblName" layoutX="387.0" layoutY="84.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="285.0" AnchorPane.leftAnchor="387.0">
+                                             <font>
+                                                <Font name="Georgia" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <HBox layoutX="229.0" layoutY="65.0">
+                                             <children>
+                                                <VBox>
+                                                   <children>
+                                                      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="105.0" style="-fx-background-color: white;" text="Name:">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="99.0" style="-fx-background-color: white;" text="Gender:">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: white;" text="Marital Status:">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="129.0" style="-fx-background-color: white;" text="Date Of Birth:">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: white;" text="Nationality:">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="141.0" style="-fx-background-color: white;" text="State Of Origin:">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: white;" text="Local Government:">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: white;" text="Religion:">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: white;" text="Phone Number:">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label layoutX="10.0" layoutY="378.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: white;" text="Email Address:">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label layoutX="10.0" layoutY="424.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: white;" text="Qualification:">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label layoutX="10.0" layoutY="470.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: white;" text="Residential Add:">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label layoutX="10.0" layoutY="516.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: white;" text="Official Address:">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label layoutX="10.0" layoutY="562.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: white;" text="Role:">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label layoutX="10.0" layoutY="608.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="173.0" style="-fx-background-color: white;" text="Date Of Employment">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="40.0">
+                                                   <children>
+                                                      <Label fx:id="lblName" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="285.0">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="lblGender" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="285.0">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="lblMStatus" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="285.0">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="lblDOB" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="285.0">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="lblNation" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="285.0" wrapText="true">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="lblState" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="285.0">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="lblLga" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="285.0">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="lblReligion" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="285.0" wrapText="true">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="lblPhone" layoutX="10.0" layoutY="332.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="285.0" wrapText="true">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="lblEmail" layoutX="10.0" layoutY="403.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="285.0" wrapText="true">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="lblQuali" layoutX="10.0" layoutY="475.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="285.0" wrapText="true">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="lblAddress1" layoutX="10.0" layoutY="546.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="285.0" wrapText="true">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="lblAddress11" layoutX="10.0" layoutY="617.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="285.0" wrapText="true">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="lblRole" layoutX="10.0" layoutY="689.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="285.0" wrapText="true">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="lblDOE" layoutX="10.0" layoutY="745.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="285.0" wrapText="true">
+                                                         <font>
+                                                            <Font name="Georgia" size="16.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                          <Button fx:id="btnUpdateStudent" layoutX="520.0" layoutY="913.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnUpdateStudentAction" prefHeight="29.0" prefWidth="103.0" styleClass="EasyEd_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="Update">
+                                             <font>
+                                                <Font name="Segoe UI Black" size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutY="6.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="910.0" prefWidth="924.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="72.0" AnchorPane.topAnchor="6.0">
+                                       <children>
+                                          <TableView fx:id="tblStaffDets" layoutX="10.0" layoutY="18.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#tblStaffDetsSelectAction" prefHeight="895.0" prefWidth="908.0" style="-fx-text-size: 20px;" stylesheets="@../EasyEdCSS/tableCSS.css">
+                                             <columns>
+                                                <TableColumn fx:id="colId" prefWidth="54.93334883451462" text="id" />
+                                                <TableColumn fx:id="colFName" prefWidth="218.0" text="First Name" />
+                                                <TableColumn fx:id="colONames" prefWidth="255.333251953125" text="Other Names" />
+                                                <TableColumn fx:id="colGender" prefWidth="148.6666259765625" text="Gender" />
+                                                <TableColumn fx:id="colPhone" editable="false" prefWidth="218.66668701171875" text="Phone" />
+                                             </columns>
+                                             <styleClass>
+                                                <String fx:value="column-header" />
+                                                <String fx:value="column-header-background" />
+                                                <String fx:value="filler" />
+                                                <String fx:value="table-column" />
+                                                <String fx:value="table-cell" />
+                                             </styleClass>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="1.0" layoutY="928.0" prefHeight="62.0" prefWidth="923.0" style="-fx-background-color: white;">
+                                       <children>
+                                          <HBox layoutX="211.0" layoutY="18.0" />
+                                          <HBox layoutX="68.0" layoutY="13.0">
+                                             <children>
+                                                <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #042954; -fx-font-fill: #FFA701; -fx-font-family: serif; -fx-font-size: 17px;" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" textFill="#ffa701">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" right="15.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="21.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #042954; -fx-font-fill: #FFA701; -fx-font-family: serif; -fx-font-size: 17px;" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="Teachers" textFill="#ffa701">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" right="15.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="21.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button layoutX="158.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #042954; -fx-font-fill: #FFA701; -fx-font-family: serif; -fx-font-size: 17px;" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="Cleaners" textFill="#ffa701">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" right="15.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="21.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button layoutX="306.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #042954; -fx-font-fill: #FFA701; -fx-font-family: serif; -fx-font-size: 17px;" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="Button" textFill="#ffa701">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" right="15.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="21.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button layoutX="454.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #042954; -fx-font-fill: #FFA701; -fx-font-family: serif; -fx-font-size: 17px;" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="Button" textFill="#ffa701">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" right="15.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="21.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab id="tabPane" fx:id="tpSReg" closable="false" style="-fx-background-color: #FFA701; -fx-pref-width: 200px; -fx-pref-height: 35px; -fx-font-size: 20; -fx-font-family: serif; -fx-border-color: #042954; -fx-border-radius: 5px;" text="Staff Registration">
+                     <content>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1027.0" prefWidth="1606.0" style="-fx-background-color: #F0F1F3;">
+                           <children>
+                              <AnchorPane layoutY="19.0" prefHeight="118.0" prefWidth="1596.0" style="-fx-background-color: white;" />
+                              <AnchorPane layoutX="361.0" layoutY="163.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="794.0" prefWidth="1606.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="163.0">
+                                 <children>
+                                    <VBox layoutX="73.0" layoutY="94.0">
+                                       <children>
+                                          <HBox>
+                                             <children>
+                                                <TextField fx:id="txtSFName" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="620.0" promptText="First Name" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                                   <font>
+                                                      <Font name="SansSerif Regular" size="12.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets right="20.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                                <TextField fx:id="txtSON" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="620.0" promptText="Other Names" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                                   <HBox.margin>
+                                                      <Insets left="20.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets bottom="20.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <VBox prefHeight="428.0" prefWidth="400.0">
+                                                   <children>
+                                                      <TextField fx:id="txtSNation" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Nationality" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                                         <VBox.margin>
+                                                            <Insets bottom="30.0" top="30.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <ComboBox fx:id="cmbSSex" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Sex" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                                         <VBox.margin>
+                                                            <Insets bottom="30.0" top="30.0" />
+                                                         </VBox.margin>
+                                                      </ComboBox>
+                                                      <ComboBox fx:id="cmbReligion" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Religion" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                                         <VBox.margin>
+                                                            <Insets bottom="30.0" top="30.0" />
+                                                         </VBox.margin>
+                                                      </ComboBox>
+                                                      <ComboBox fx:id="cmbQuali" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#cmbClassAction" prefHeight="40.0" prefWidth="400.0" promptText="Qualification" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                                         <VBox.margin>
+                                                            <Insets bottom="30.0" top="30.0" />
+                                                         </VBox.margin>
+                                                      </ComboBox>
+                                                      <DatePicker fx:id="dpDOE" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Date Of  Employment" style="-fx-font-weight: bold; -fx-font-size: 20;">
+                                                         <VBox.margin>
+                                                            <Insets bottom="30.0" top="30.0" />
+                                                         </VBox.margin>
+                                                      </DatePicker>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets right="40.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                                <VBox>
+                                                   <children>
+                                                      <ComboBox fx:id="cmbSState" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#cmbSStateAction" prefHeight="40.0" prefWidth="400.0" promptText="State" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                                         <VBox.margin>
+                                                            <Insets bottom="30.0" top="30.0" />
+                                                         </VBox.margin>
+                                                      </ComboBox>
+                                                      <ComboBox fx:id="cmbCMStatus" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#cmbClassAction" prefHeight="40.0" prefWidth="400.0" promptText="Marital Status" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                                         <VBox.margin>
+                                                            <Insets bottom="30.0" top="30.0" />
+                                                         </VBox.margin>
+                                                      </ComboBox>
+                                                      <TextField fx:id="txtSPhone" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Phone Number" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                                         <VBox.margin>
+                                                            <Insets bottom="30.0" top="30.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <TextArea fx:id="txtRAddress" prefHeight="66.0" prefWidth="400.0" promptText="Residential  Address" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                                         <VBox.margin>
+                                                            <Insets bottom="30.0" top="30.0" />
+                                                         </VBox.margin>
+                                                         <font>
+                                                            <Font name="Microsoft Sans Serif" size="12.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                      <ComboBox fx:id="cmbRole" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#cmbRoleAction" prefHeight="40.0" prefWidth="400.0" promptText="Role" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css" />
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets right="40.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                                <VBox>
+                                                   <children>
+                                                      <ComboBox fx:id="cmbSLGA" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="LGA" style="-fx-font-size: 20;" styleClass="EasyEd_ComboBox" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                                         <VBox.margin>
+                                                            <Insets bottom="30.0" top="30.0" />
+                                                         </VBox.margin>
+                                                      </ComboBox>
+                                                      <DatePicker fx:id="dpDOB" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Date Of Birth" style="-fx-font-size: 20px;">
+                                                         <VBox.margin>
+                                                            <Insets bottom="30.0" top="30.0" />
+                                                         </VBox.margin>
+                                                      </DatePicker>
+                                                      <TextField fx:id="txtSEmail" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Email Address" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                                         <VBox.margin>
+                                                            <Insets bottom="30.0" top="30.0" />
+                                                         </VBox.margin>
+                                                      </TextField>
+                                                      <TextArea fx:id="txtOAddress" prefHeight="66.0" prefWidth="400.0" promptText="Official Address" style="-fx-background-color: #e1e4eb;" styleClass="EasyEd_Textfields" stylesheets="@../EasyEdCSS/easyEdCSS.css">
+                                                         <VBox.margin>
+                                                            <Insets bottom="30.0" top="30.0" />
+                                                         </VBox.margin>
+                                                         <font>
+                                                            <Font name="Microsoft Sans Serif" size="12.0" />
+                                                         </font>
+                                                      </TextArea>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <Label alignment="CENTER" layoutX="555.0" layoutY="9.0" prefHeight="40.0" prefWidth="644.0" style="-fx-background-color: WHITE;" text="Staff Details" textAlignment="CENTER" textFill="#2c2929" underline="true">
+                                       <font>
+                                          <Font name="Serif Bold" size="29.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox layoutX="541.0" layoutY="707.0">
+                                       <children>
+                                          <Button fx:id="btnAddStaff" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnAddStaffAction" prefHeight="40.0" prefWidth="180.0" styleClass="EasyEd_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="Add Staff">
+                                             <HBox.margin>
+                                                <Insets left="50.0" right="50.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                          <Button fx:id="studentEdit" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#studentEditAction" prefHeight="40.0" prefWidth="166.0" styleClass="EasyEd_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="Update Details">
+                                             <HBox.margin>
+                                                <Insets left="50.0" right="50.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </center>
+         <top>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="92.0" prefWidth="1920.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <MenuButton layoutX="1476.0" layoutY="22.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="54.0" prefWidth="230.0" style="-fx-background-color: white;" text="STANLEY" textFill="#042954" AnchorPane.rightAnchor="120.0">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                     </items>
+                     <font>
+                        <Font name="Constantia" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/icons8_businessman_48px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuButton>
+                  <AnchorPane layoutX="-1.0" layoutY="-4.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="92.0" prefWidth="314.0" style="-fx-background-color: #FFA701;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <HBox layoutX="314.0" prefHeight="100.0" prefWidth="215.0">
+                     <children>
+                        <ImageView fitHeight="92.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/1.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="92.0" fitWidth="112.0" layoutX="410.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/2.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="92.0" fitWidth="111.0" layoutX="610.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/3.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="92.0" fitWidth="111.0" layoutX="810.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/4.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="92.0" fitWidth="115.0" layoutX="369.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/5.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="91.0" fitWidth="110.0" layoutX="251.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/3.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="91.0" fitWidth="111.0" layoutX="369.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/4.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="91.0" fitWidth="122.0" layoutX="127.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/1.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="91.0" fitWidth="113.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/5.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="91.0" fitWidth="111.0" layoutX="485.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/2.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1107.3333" prefWidth="314.0" style="-fx-background-color: #042954;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnDashboardStudDet" alignment="BASELINE_LEFT" layoutY="265.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDashboardStudDetAction" prefHeight="90.0" prefWidth="314.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Student Details" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnDashboardStaff" alignment="BASELINE_LEFT" layoutY="88.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDashboardStaffAction" prefHeight="90.0" prefWidth="314.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Staffs" textAlignment="CENTER" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnDashboardPaySec" alignment="BASELINE_LEFT" layoutX="-2.0" layoutY="441.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDashboardPaySecAction" prefHeight="90.0" prefWidth="314.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Payment Section" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnDashboardClass" alignment="BASELINE_LEFT" layoutY="353.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDashboardClassAction" prefHeight="90.0" prefWidth="314.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Class Section" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnDashboardInv" alignment="BASELINE_LEFT" layoutY="529.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDashboardInvAction" prefHeight="90.0" prefWidth="314.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Inventory" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnDashboardStudReg" alignment="BASELINE_LEFT" layoutY="176.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDashboardStudRegAction" prefHeight="90.0" prefWidth="314.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="            Student Registration" textAlignment="CENTER" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnDashbosrd" alignment="BASELINE_LEFT" layoutX="-2.0" layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnDashboardAction" prefHeight="90.0" prefWidth="314.0" styleClass="Menu_Pane_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="             Dashboard" textAlignment="CENTER" textFill="#190101" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Javanese Text" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="13.0" layoutY="19.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_uncheck_all_filled_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="12.0" layoutY="107.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_conference_call_64px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="13.0" layoutY="196.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_guest_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="283.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_conference_filled_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="13.0" layoutY="373.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_training_128px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="13.0" layoutY="461.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_paypal_52px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="13.0" layoutY="549.0" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../icons/icons8_business_100px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1107.0" prefWidth="0.0" style="-fx-background-color: #F0F1F3;" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <AnchorPane prefHeight="0.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

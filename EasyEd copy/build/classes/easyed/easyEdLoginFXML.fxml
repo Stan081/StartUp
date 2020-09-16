@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="656.0" style="-fx-background-color: #042954;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="easyed.EasyEdLoginFXMLController">
+   <children>
+      <TextField fx:id="txtUsername" layoutX="216.0" layoutY="184.0" opacity="0.83" prefHeight="34.0" prefWidth="265.0" style="-fx-font-weight: bold; -fx-font-size: 20px; -fx-background-color: #3bb18d; -fx-text-fill: white;" styleClass="login">
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font></TextField>
+      <Button fx:id="btnLogin" layoutX="286.0" layoutY="317.0" mnemonicParsing="false" onAction="#btnLoginAction" prefHeight="34.0" prefWidth="126.0" styleClass="EasyEd_Buttons" stylesheets="@../EasyEdCSS/easyEdCSS.css" text="Login" />
+      <TextField fx:id="txtPassword" layoutX="216.0" layoutY="251.0" opacity="0.83" prefHeight="34.0" prefWidth="265.0" style="-fx-font-weight: bold; -fx-font-size: 20px; -fx-background-color: #3bb18d; -fx-text-fill: white;" styleClass="login">
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font></TextField>
+      <Label layoutX="111.0" layoutY="184.0" prefHeight="34.0" prefWidth="94.0" text="Username" textFill="#f7f3f3">
+         <font>
+            <Font name="SansSerif Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="111.0" layoutY="251.0" prefHeight="34.0" prefWidth="94.0" text="Password" textFill="#f7f3f3">
+         <font>
+            <Font name="SansSerif Bold" size="16.0" />
+         </font></Label>
+      <ImageView fitHeight="129.0" fitWidth="140.0" layoutX="271.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8_brick_96px_1.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="194.0" layoutY="130.0" prefHeight="34.0" prefWidth="284.0" text="EasyEd" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe Script Bold" size="26.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.05396825699579148">
+               <stops>
+                  <Stop color="#2e8786" />
+                  <Stop color="#2e8786" offset="0.07908163265306124" />
+                  <Stop color="#2766c4c4" offset="0.3742527903609957" />
+                  <Stop color="#f38d11c4" offset="0.5943877551020408" />
+                  <Stop color="#f38d11c4" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
